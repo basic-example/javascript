@@ -1,0 +1,12 @@
+{
+  "name": "sandbox",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
+  }
+}
