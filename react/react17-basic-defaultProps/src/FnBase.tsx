@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 type Props = {
   [k in string]: string;
 };
 
-const FnBase = (props: Props): JSX.Element => {
+const FnBase: FunctionComponent<Props> = (props: Props): JSX.Element => {
   return (
     <div>
       <h2>Functional Base Child Component</h2>

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 type Props = {
   message: string;
 };
 
-const App = (props: Props): JSX.Element => {
+const App: FunctionComponent<Props> = (props: Props): JSX.Element => {
   return (
     <div>
       <h1>App</h1>
