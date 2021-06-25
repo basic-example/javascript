@@ -1,7 +1,5 @@
 /// <reference types="react-scripts" />
 
-type fn = (...props: anything) => anything | void;
-type anything = fn | obj | string | number | null | undefined;
-type obj = {
-  [k in string]: anything;
-};
+type fn = typeof Function.prototype;
+type obj = typeof Object.prototype;
+type anything = fn | obj | Array<anything> | string | number | null | undefined;
