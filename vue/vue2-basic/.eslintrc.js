@@ -16,13 +16,12 @@ module.exports = {
   root: true,
   rules: {
     "import/first": "error",
-    "import/order": "error",
-    "sort-imports": [
+    "import/order": [
       "error",
-      {
-        ignoreDeclarationSort: true,
-      },
+      { alphabetize: { order: "asc" }, "newlines-between": "never" },
     ],
+    "sort-imports": ["error", { ignoreDeclarationSort: true }],
     "sort-keys": "error",
+    "sort-vars": "error",
   },
 };
