@@ -25,13 +25,12 @@ export default (
 
   const result = (code: string): string => {
     const textarea = document.createElement("textarea");
-    console.log(code);
     const result = apply("return " + code);
     const jsonify =
       typeof result === typeof Function.prototype
         ? result.toString()
         : JSON.stringify(result, null, 2);
-    const isMultiLine = jsonify.match(/\n/) ? true : false;
+    const isMultiLine = jsonify && jsonify.match(/\n/) ? true : false;
     const output = `\n${code} ${
       isMultiLine ? "/* " + jsonify + " */" : "// " + jsonify
     }\n`.replaceAll("\n", "\n  ");
