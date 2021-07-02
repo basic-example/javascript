@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>JavaScript disabled. Please enable it to work.</strong>
+    </noscript>
+    <style>
+      [v-cloak] > * {
+        display: none;
+      }
+      [v-cloak]::before {
+        content: "loading…";
+      }
+    </style>
+    <p>it is useful when use ssr</p>
+    <hr />
+    <div id="app1" v-cloak>
+      <p>{{ message }}</p>
+    </div>
+    <hr />
+    <div id="app2">
+      <p>{{ message }}</p>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
