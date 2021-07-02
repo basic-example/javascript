@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# vue.js
+/dist
+
+# misc
+.DS_Store
+/.idea
+/.vscode
+
+# vercel
+/.vercel
