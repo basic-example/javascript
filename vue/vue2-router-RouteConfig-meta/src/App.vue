@@ -61,7 +61,15 @@ const routes: RouteConfig[] = [
   },
   {
     component: {
-      template: `<h2>Login Component</h2>`,
+      template: `
+        <div>
+          <h2>Login Component</h2>
+          <p>$route.meta.foo: {{ $route.meta.foo }}</p>
+        </div>
+      `,
+    },
+    meta: {
+      foo: "bar",
     },
     name: "login",
     path: "/login",
