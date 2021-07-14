@@ -1,0 +1,27 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack build",
+    "dev": "npm run start",
+    "prod": "npm run build && serve dist",
+    "lint": "prettier --write . && cd src && htmlhint index.html && eslint index.js && stylelint index.css"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.7",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "html-webpack-plugin": "^5.3.2",
+    "htmlhint": "^0.15.1",
+    "mini-css-extract-plugin": "^2.1.0",
+    "prettier": "^2.3.2",
+    "serve": "^12.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
