@@ -1,0 +1,18 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# svelte.js
+/public/build
+
+# editors
+/.idea
+/.vscode
+
+# system files
+Thumbs.db
+.DS_Store
+
+# vercel
+/.vercel
