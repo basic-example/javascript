@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
+    "dev": "rollup -c -w",
+    "prod": "npm run build && npm run start",
     "lint": "prettier --check --plugin-search-dir=. --ignore-path .gitignore . && eslint --ignore-path .gitignore . && svelte-check"
   },
   "devDependencies": {
