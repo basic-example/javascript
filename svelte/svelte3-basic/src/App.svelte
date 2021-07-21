@@ -1,12 +1,9 @@
 <script lang="ts">
-  export let name: string;
-
-  name = "App Component";
 </script>
 
-<main>
-  <h1>{name}</h1>
-</main>
+<div>
+  <h1>App</h1>
+</div>
 
 <style>
 </style>
