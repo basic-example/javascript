@@ -1,10 +1,7 @@
 <script lang="ts">
-  export let name: string;
-
-  name = "App Component";
 </script>
 
-<h1>{name}</h1>
+<h1>App</h1>
 
 <style>
 </style>
