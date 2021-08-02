@@ -7,7 +7,7 @@
 
 <script lang="ts">
 export default {
-  layout: "first",
+  layout: "header",
 };
 </script>
 
