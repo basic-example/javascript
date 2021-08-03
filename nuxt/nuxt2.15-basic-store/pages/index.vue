@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Root Page</h1>
+    <p>Object.keys($store): {{ Object.keys($store) }}</p>
     <p>{{ $store.state.counter }}</p>
     <p>{{ $store.getters.doubleCount }}</p>
     <button @click="commitMutation">commitMutation</button>
