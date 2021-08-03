@@ -1,0 +1,13 @@
+<template>
+  <div>
+    <h1>User</h1>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue, { ComponentOptions } from "vue";
+
+export default {} as ComponentOptions<Vue>;
+</script>
+
+<style scoped></style>
