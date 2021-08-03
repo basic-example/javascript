@@ -12,4 +12,4 @@ import Vue, { ComponentOptions } from "vue";
 export default {} as ComponentOptions<Vue>;
 </script>
 
-<style></style>
+<style scoped></style>
