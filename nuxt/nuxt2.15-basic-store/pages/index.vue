@@ -9,9 +9,9 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, { ComponentOptions } from "vue";
 
-export default Vue.extend({
+export default {
   methods: {
     commitMutation() {
       this.$store.commit("increment", 2);
@@ -20,7 +20,7 @@ export default Vue.extend({
       this.$store.dispatch("increment", 2);
     },
   },
-});
+} as ComponentOptions<Vue>;
 </script>
 
 <style scoped></style>

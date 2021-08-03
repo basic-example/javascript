@@ -6,8 +6,9 @@
 </template>
 
 <script lang="ts">
+import Vue, { ComponentOptions } from "vue";
+
 export default {
-  // layout property not work in layout
-  // use layout property in component only
-};
+  // layout: 'nested layout not possible'
+} as ComponentOptions<Vue>;
 </script>

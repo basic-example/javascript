@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, { ComponentOptions } from "vue";
 
-export default Vue.extend({});
+export default {} as ComponentOptions<Vue>;
 </script>
 
 <style></style>

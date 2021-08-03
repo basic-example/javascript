@@ -6,9 +6,11 @@
 </template>
 
 <script lang="ts">
+import Vue, { ComponentOptions } from "vue";
+
 export default {
   layout: "header",
-};
+} as ComponentOptions<Vue>;
 </script>
 
 <style scoped></style>

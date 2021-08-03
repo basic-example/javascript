@@ -5,11 +5,13 @@
 </template>
 
 <script lang="ts">
+import Vue, { ComponentOptions } from "vue";
+
 export default {
   layout: () => {
     return "base";
   },
-};
+} as ComponentOptions<Vue>;
 </script>
 
 <style scoped></style>
