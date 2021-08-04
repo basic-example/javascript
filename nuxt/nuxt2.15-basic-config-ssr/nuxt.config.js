@@ -12,5 +12,5 @@ export default {
   },
   components: true,
   buildModules: ["@nuxt/typescript-build"],
-  ssr: false,
+  ssr: false, // default: true, false
 };
