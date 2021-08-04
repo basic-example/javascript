@@ -10,7 +10,6 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  components: true,
   buildModules: ["@nuxt/typescript-build"],
   target: "static", // default: server, static
 };
