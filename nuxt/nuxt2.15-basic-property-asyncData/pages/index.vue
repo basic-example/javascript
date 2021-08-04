@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { ComponentOptions } from "vue";
+import { NuxtAppOptions } from "@nuxt/types";
 import type { Context } from "@nuxt/types";
 import Message from "../components/message.vue";
 
@@ -26,7 +26,7 @@ export default {
 
     return { user };
   },
-} as ComponentOptions<Vue>;
+} as NuxtAppOptions;
 </script>
 
 <style scoped></style>

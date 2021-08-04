@@ -10,9 +10,9 @@
 </template>
 
 <script lang="ts">
-import Vue, { ComponentOptions } from "vue";
+import { NuxtAppOptions } from "@nuxt/types";
 
-export default {} as ComponentOptions<Vue>;
+export default {} as NuxtAppOptions;
 </script>
 
 <style scoped></style>

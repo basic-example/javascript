@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import Vue, { ComponentOptions } from "vue";
+import { NuxtAppOptions } from "@nuxt/types";
 
 export default {
   layout: () => {
     return "base";
   },
-} as ComponentOptions<Vue>;
+} as NuxtAppOptions;
 </script>
 
 <style scoped></style>

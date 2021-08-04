@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { ComponentOptions } from "vue";
+import { NuxtAppOptions } from "@nuxt/types";
 
 export default {
   async asyncData() {
@@ -18,7 +18,7 @@ export default {
 
     return { message };
   },
-} as ComponentOptions<Vue>;
+} as NuxtAppOptions;
 </script>
 
 <style scoped></style>

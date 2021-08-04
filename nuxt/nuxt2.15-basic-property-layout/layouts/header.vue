@@ -6,9 +6,9 @@
 </template>
 
 <script lang="ts">
-import Vue, { ComponentOptions } from "vue";
+import { NuxtAppOptions } from "@nuxt/types";
 
 export default {
   // layout: 'nested layout not possible'
-} as ComponentOptions<Vue>;
+} as NuxtAppOptions;
 </script>

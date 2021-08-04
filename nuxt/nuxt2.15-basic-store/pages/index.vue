@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { ComponentOptions } from "vue";
+import { NuxtAppOptions } from "@nuxt/types";
 
 export default {
   methods: {
@@ -21,7 +21,7 @@ export default {
       this.$store.dispatch("increment", 2);
     },
   },
-} as ComponentOptions<Vue>;
+} as NuxtAppOptions;
 </script>
 
 <style scoped></style>
