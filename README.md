@@ -1,21 +1,13 @@
 # Example of javascript library or framework
 
-## 1.Prerequisite
-
-### 1.1 pnpm global installation
-
-```
-npm install pnpm -g
-```
-
-## 2. Install
+## 1. Root Package Install
 
 ```
 npm install
 ```
 
-## 3. Example Testing & Learning
+## 2. Example Package Install & Testing & Learning
 
 ```
-cd ##example-path## && npm install
+cd <EXAMPLE-PATH> && npm install && npm run dev
 ```

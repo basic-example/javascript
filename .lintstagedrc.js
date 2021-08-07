@@ -26,7 +26,7 @@ module.exports = (files) => {
 
   for (const [type, projects] of Object.entries(obj)) {
     projects.forEach((project) => {
-      const cmd = `cd ${type} && cd ${project} && pnpm install && npm run lint`;
+      const cmd = `cd ${type} && cd ${project} && npm install && npm run lint`;
 
       console.log("----------------------------------------------------------");
       console.log(`run: ` + cmd);
