@@ -1,5 +1,4 @@
-module.exports = async (files) => {
-  const fs = require("fs");
+module.exports = (files) => {
   const sep = require("path").sep;
   const exec = require("child_process").exec;
   const obj = files.reduce((acc, value) => {
@@ -25,16 +24,9 @@ module.exports = async (files) => {
     return acc;
   }, {});
 
-  if (!fs.existsSync("./.env")) {
-    await fs.promises.writeFile("./.env", "PKG_INSTALL_CMD=npm i", {
-      encoding: "utf8",
-    });
-  }
-
   for (const [type, projects] of Object.entries(obj)) {
     projects.forEach((project) => {
-      const env = require("dotenv").config().parsed;
-      const cmd = `cd ${type} && cd ${project} && ${env.PKG_INSTALL_CMD} && npm run lint`;
+      const cmd = `cd ${type} && cd ${project} && pnpm install && npm run lint`;
 
       console.log("----------------------------------------------------------");
       console.log(`run: ` + cmd);
