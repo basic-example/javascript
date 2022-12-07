@@ -1,0 +1,14 @@
+{
+  "name": "basic-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "",
+    "start": "serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.1.2"
+  }
+}
