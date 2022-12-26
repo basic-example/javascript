@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "noImplicitAny": false,
     "strict": true,
-    "target": "esnext",
+    "target": "ESNext",
   },
   "exclude": ["node_modules"]
 }

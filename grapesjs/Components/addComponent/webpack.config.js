@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { EnvironmentPlugin } = require('webpack');
 
 module.exports = {
-  mode: process.env.NODE_ENV || 'development',
+  mode: 'development',
   entry: './src/script.ts',
   module: {
     rules: [
@@ -30,7 +30,7 @@ module.exports = {
     extensions: ['.ts', '.js'],
   },
   plugins: [
-    new EnvironmentPlugin(Object.keys(process.env)),
+    new EnvironmentPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
