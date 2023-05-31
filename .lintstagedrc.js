@@ -21,7 +21,7 @@ module.exports = (files) => {
       dir
         .split("/")
         .map((folder) => `cd ${folder} && `)
-        .join("") + "npm install && npm run";
+        .join("") + "npm install && npm run lint && npm run test";
 
     console.log("=============================");
     console.log(cmd);
