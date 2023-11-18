@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .use-layer .btn-primary {
+    @apply bg-blue-500;
+  }
+}
+
+@layer components {
+  .use-layer .btn {
+    @apply bg-gray-500;
+  }
+}
+
+.not-use-layer .btn-primary {
+  @apply bg-blue-500;
+}
+
+.not-use-layer .btn {
+  @apply bg-gray-500;
+}

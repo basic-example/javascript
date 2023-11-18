@@ -1,0 +1,92 @@
+
+C:\workspace\github\basic-example\javascript\tailwindcss\dist\index.css
+   7:23  error  Insert `;`  prettier/prettier
+   8:1   error  Delete `·`  prettier/prettier
+  13:23  error  Insert `;`  prettier/prettier
+  18:21  error  Insert `;`  prettier/prettier
+  22:21  error  Insert `;`  prettier/prettier
+
+C:\workspace\github\basic-example\javascript\tailwindcss\dist\output.css
+   25:17  error  Replace `''` with `""`                                                                                                                                                  prettier/prettier
+   45:3   error  Delete `···`                                                                                                                                                            prettier/prettier
+   47:76  error  Replace `·"Segoe·UI",·Roboto,·"Helvetica·Neue",·Arial,·"Noto·Sans",·sans-serif,` with `⏎····"Segoe·UI",·Roboto,·"Helvetica·Neue",·Arial,·"Noto·Sans",·sans-serif,⏎···`  prettier/prettier
+   88:3   error  Delete `········`                                                                                                                                                       prettier/prettier
+  132:70  error  Insert `⏎···`                                                                                                                                                           prettier/prettier
+  227:7   error  Replace `'button'` with `"button"`                                                                                                                                      prettier/prettier
+  228:7   error  Replace `'reset'` with `"reset"`                                                                                                                                        prettier/prettier
+  229:7   error  Replace `'submit'` with `"submit"`                                                                                                                                      prettier/prettier
+  276:7   error  Replace `'search'` with `"search"`                                                                                                                                      prettier/prettier
+  369:25  error  Replace `·` with `⏎`                                                                                                                                                    prettier/prettier
+  437:3   error  Replace `·::before,·` with `⏎::before,⏎`                                                                                                                                prettier/prettier
+  447:15  error  Delete `·`                                                                                                                                                              prettier/prettier
+  448:14  error  Delete `·`                                                                                                                                                              prettier/prettier
+  449:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  451:32  error  Delete `·`                                                                                                                                                              prettier/prettier
+  452:30  error  Delete `·`                                                                                                                                                              prettier/prettier
+  453:29  error  Delete `·`                                                                                                                                                              prettier/prettier
+  454:17  error  Delete `·`                                                                                                                                                              prettier/prettier
+  455:21  error  Delete `·`                                                                                                                                                              prettier/prettier
+  456:23  error  Delete `·`                                                                                                                                                              prettier/prettier
+  457:25  error  Delete `·`                                                                                                                                                              prettier/prettier
+  458:26  error  Delete `·`                                                                                                                                                              prettier/prettier
+  459:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  467:13  error  Delete `·`                                                                                                                                                              prettier/prettier
+  468:20  error  Delete `·`                                                                                                                                                              prettier/prettier
+  469:17  error  Delete `·`                                                                                                                                                              prettier/prettier
+  470:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  471:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  472:16  error  Delete `·`                                                                                                                                                              prettier/prettier
+  473:18  error  Delete `·`                                                                                                                                                              prettier/prettier
+  474:14  error  Delete `·`                                                                                                                                                              prettier/prettier
+  475:21  error  Delete `·`                                                                                                                                                              prettier/prettier
+  476:22  error  Delete `·`                                                                                                                                                              prettier/prettier
+  477:29  error  Delete `·`                                                                                                                                                              prettier/prettier
+  478:26  error  Delete `·`                                                                                                                                                              prettier/prettier
+  479:28  error  Delete `·`                                                                                                                                                              prettier/prettier
+  480:29  error  Delete `·`                                                                                                                                                              prettier/prettier
+  481:24  error  Delete `·`                                                                                                                                                              prettier/prettier
+  482:26  error  Delete `·`                                                                                                                                                              prettier/prettier
+  483:27  error  Delete `·`                                                                                                                                                              prettier/prettier
+  484:23  error  Delete `·`                                                                                                                                                              prettier/prettier
+  497:15  error  Delete `·`                                                                                                                                                              prettier/prettier
+  498:14  error  Delete `·`                                                                                                                                                              prettier/prettier
+  499:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  501:32  error  Delete `·`                                                                                                                                                              prettier/prettier
+  502:30  error  Delete `·`                                                                                                                                                              prettier/prettier
+  503:30  error  Delete `·`                                                                                                                                                              prettier/prettier
+  504:16  error  Delete `·`                                                                                                                                                              prettier/prettier
+  505:22  error  Delete `·`                                                                                                                                                              prettier/prettier
+  506:23  error  Delete `·`                                                                                                                                                              prettier/prettier
+  507:24  error  Delete `·`                                                                                                                                                              prettier/prettier
+  508:26  error  Delete `·`                                                                                                                                                              prettier/prettier
+  509:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  517:14  error  Delete `·`                                                                                                                                                              prettier/prettier
+  518:20  error  Delete `·`                                                                                                                                                              prettier/prettier
+  519:17  error  Delete `·`                                                                                                                                                              prettier/prettier
+  520:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  521:19  error  Delete `·`                                                                                                                                                              prettier/prettier
+  522:16  error  Delete `·`                                                                                                                                                              prettier/prettier
+  523:17  error  Delete `·`                                                                                                                                                              prettier/prettier
+  524:15  error  Delete `·`                                                                                                                                                              prettier/prettier
+  525:20  error  Delete `·`                                                                                                                                                              prettier/prettier
+  526:23  error  Delete `·`                                                                                                                                                              prettier/prettier
+  527:29  error  Delete `·`                                                                                                                                                              prettier/prettier
+  528:26  error  Delete `·`                                                                                                                                                              prettier/prettier
+  529:28  error  Delete `·`                                                                                                                                                              prettier/prettier
+  530:29  error  Delete `·`                                                                                                                                                              prettier/prettier
+  531:24  error  Delete `·`                                                                                                                                                              prettier/prettier
+  532:26  error  Delete `·`                                                                                                                                                              prettier/prettier
+  533:27  error  Delete `·`                                                                                                                                                              prettier/prettier
+  534:23  error  Delete `·`                                                                                                                                                              prettier/prettier
+
+C:\workspace\github\basic-example\javascript\tailwindcss\src\index.css
+   7:23  error  Insert `;`                                                                              prettier/prettier
+   8:1   error  Delete `·`                                                                              prettier/prettier
+  12:13  error  Delete `⏎··············`                                                                prettier/prettier
+  14:1   error  Replace `⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎⏎····@apply·bg-gray-500` with `····@apply·bg-gray-500;`  prettier/prettier
+  42:21  error  Insert `;`                                                                              prettier/prettier
+  46:21  error  Insert `;`                                                                              prettier/prettier
+
+✖ 82 problems (82 errors, 0 warnings)
+  82 errors and 0 warnings potentially fixable with the `--fix` option.
+
