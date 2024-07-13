@@ -14,7 +14,7 @@ module.exports = (files) => {
     return acc;
   }, []);
   const project_dirs = dirs.filter((path) =>
-    fs.existsSync(root + "/" + path + "/package.json")
+    fs.existsSync(root + "/" + path + "/package.json"),
   );
   project_dirs.forEach((dir) => {
     const cmd =

@@ -1,0 +1,1 @@
+npm exec eslint . && npm exec lint-staged -d -v
