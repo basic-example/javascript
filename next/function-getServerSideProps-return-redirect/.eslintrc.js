@@ -1,21 +1,7 @@
 module.exports = {
   root: true,
-  env: {
-    browser: true,
-    node: true,
-    es2021: true,
-  },
-  settings: {
-    react: { version: "detect" },
-  },
-  parser: "@typescript-eslint/parser",
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
+    "next/core-web-vitals",
     "plugin:prettier/recommended",
-  ],
-  rules: {},
-  overrides: [],
-};
+  ]
+}

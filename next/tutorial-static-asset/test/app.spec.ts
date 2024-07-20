@@ -1,31 +1,19 @@
 import { expect, test } from "@playwright/test";
 
-test.beforeAll(async ({ browser }) => {
-  require("node:child_process").spawn("npm", ["run", "dev"], {
-    stdio: ["ignore", "inherit", "inherit"],
-    shell: true,
-  });
-  const page = await browser.newPage();
-  await page.goto("http://localhost:3000");
-  await page.close();
-});
+test("example", async ({ page }) => {
+  for (const goToPage of ["", "dashboard"]) {
+    await page.goto("http://localhost:3000/" + goToPage);
+    await page.waitForURL("**/" + goToPage);
+    await page.waitForLoadState("networkidle");
 
-test.afterAll(async () => {
-  const find = require("find-process");
-  const pid = (await find("port", "3000"))[0].pid;
-  process.kill(pid, 9);
-});
+    const naturalWidths = await page.locator("img").evaluateAll((elements) => {
+      return elements.map((element: any) => element.naturalWidth);
+    });
 
-test("static-asset", async ({ page }) => {
-  await page.goto("http://localhost:3000/dashboard");
-  await page.waitForURL("**/dashboard");
-  await page.waitForLoadState("networkidle");
+    expect(naturalWidths.length).toBe(3);
 
-  const naturalWidths = await page.locator("img").evaluateAll((elements) => {
-    return elements.map((element: any) => element.naturalWidth);
-  });
-
-  naturalWidths.forEach((naturalWidth) => {
-    expect(naturalWidth).not.toBe(0);
-  });
+    naturalWidths.forEach((naturalWidth) => {
+      expect(naturalWidth).not.toBe(0);
+    });
+  }
 });

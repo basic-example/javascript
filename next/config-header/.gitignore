@@ -2,18 +2,29 @@
 /node_modules
 /.pnp
 .pnp.js
+.yarn/install-state.gz
 
 # next.js
 /.next
-/out
 
 # editors
 /.idea
 /.vscode
 
+# env files
+.env
+.env.*
+
 # system files
 Thumbs.db
 .DS_Store
+
+# testing
+/test-results
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
 # vercel
 /.vercel

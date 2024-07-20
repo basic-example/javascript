@@ -1,33 +1,36 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   headers: async () => {
     return [
       {
         source: "/:path*",
         headers: [
           {
-            key: "aaaaaaaaaaaaaaaaa-:path*",
-            value: "wildward path (:path*) available",
+            key: "all-wildward",
+            value: "exist1",
           },
         ],
       },
       {
-        source: "/about",
+        source: "/([a-z\/]{0,})",
         headers: [
           {
-            key: "aaaaaaaaaaaaaaaaa-strict",
-            value: "strict path available",
+            key: "all-regex",
+            value: "exist2",
           },
         ],
       },
       {
-        source: "/([a-z]{1,})",
+        source: "/settings",
         headers: [
           {
-            key: "aaaaaaaaaaaaaaaaa-regex",
-            value: "regex available",
+            key: "strict-settings",
+            value: "exist3",
           },
         ],
       },
     ];
   },
-};
+}
+
+module.exports = nextConfig

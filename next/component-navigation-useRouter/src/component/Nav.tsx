@@ -10,7 +10,7 @@ export default function Nav() {
       <ul>
         <li>
           <button type="button" onClick={() => router.push("/dashboard")}>
-            dashboard
+            router.push button
           </button>
         </li>
       </ul>
