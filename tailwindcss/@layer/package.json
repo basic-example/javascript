@@ -1,29 +1,23 @@
 {
   "name": "basic-example",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
-    "dev": "concurrently -n :: npm:dev:*",
-    "dev:server": "cp -rf ./src/* ./dist && http-server ./dist",
-    "dev:css": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
     "lint": "eslint .",
-    "postinstall": "playwright install",
-    "test": "playwright test"
+    "dev": "vite",
+    "build": "vite build",
+    "prod": "vite preview",
+    "test": "playwright test",
+    "postinstall": "playwright install"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@angular-eslint/eslint-plugin-template": "^17.1.0",
-    "@angular-eslint/template-parser": "^17.1.0",
-    "@playwright/test": "^1.39.0",
-    "@types/node": "^20.9.1",
-    "concurrently": "^8.2.2",
+    "@playwright/test": "^1.45.3",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
     "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-tailwindcss": "^3.13.0",
-    "find-process": "^1.4.7",
-    "http-server": "^14.1.1",
-    "playwright": "^1.39.0",
-    "prettier": "^3.0.3"
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-tailwindcss": "^3.17.4",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.4"
   }
 }
