@@ -1,0 +1,23 @@
+{
+  "name": "basic-example",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack build",
+    "start": "http-server -c-1 dist",
+    "prod": "npm run build && npm run start",
+    "lint": "eslint .",
+    "test": "playwright test",
+    "postinstall": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "eslint": "^8.28.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "html-webpack-plugin": "^5.6.0",
+    "http-server": "^14.1.1",
+    "playwright": "^1.45.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
