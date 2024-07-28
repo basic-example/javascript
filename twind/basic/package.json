@@ -1,0 +1,21 @@
+{
+  "name": "basic-example",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint .",
+    "dev": "vite",
+    "build": "vite build",
+    "prod": "vite preview",
+    "test": "playwright test",
+    "postinstall": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "vite": "^5.3.4",
+    "twind": "^0.16.19"
+  }
+}
