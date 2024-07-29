@@ -5,11 +5,15 @@
 
 # ouput
 /dist
+/test-results
 
-# misc
-.DS_Store
+# editors
 /.idea
 /.vscode
+
+# system files
+Thumbs.db
+.DS_Store
 
 # vercel
 /.vercel
