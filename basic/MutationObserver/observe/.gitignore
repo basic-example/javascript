@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# ouput
+/dist
+/test-results
+
+# editors
+/.idea
+/.vscode
+
+# system files
+Thumbs.db
+.DS_Store
+
+# vercel
+/.vercel
