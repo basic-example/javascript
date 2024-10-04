@@ -1,0 +1,26 @@
+{
+  "name": "basic-example",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "jest",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "joi": "^17.13.3"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.4",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  }
+}
