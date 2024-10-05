@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strict": true,
+    "target": "esnext",
+    "resolveJsonModule": true,
+  },
+  "exclude": ["node_modules"]
+}
