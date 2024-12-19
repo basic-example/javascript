@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noImplicitAny": false,
+    "strict": true,
+    "target": "esnext",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+  },
+  "exclude": ["node_modules"]
+}
