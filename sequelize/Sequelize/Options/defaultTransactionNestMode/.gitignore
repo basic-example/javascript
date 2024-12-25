@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# build
+/out
+
+# editors
+/.idea
+/.vscode
+
+# system files
+Thumbs.db
+.DS_Store
+
+# vercel
+/.vercel
+
+# sqlite database
+db.sqlite
