@@ -98,6 +98,34 @@ describe("sequelize/Model/FindOptions/include", () => {
 
     expect(query).toEqual(expectQuery);
   });
+  test("include with { as: yyy }", async () => {
+    await Post.sync({ force: true });
+    await Comment.sync({ force: true });
+
+    await Post.findAll({
+      include: [
+        {
+          as: "comments",
+        },
+      ],
+    });
+    expect(query).toEqual(expectQuery);
+  });
+  test("include with { model: xxx, as: yyy }", async () => {
+    await Post.sync({ force: true });
+    await Comment.sync({ force: true });
+
+    await Post.findAll({
+      include: [
+        {
+          model: Comment,
+          as: "comments",
+        },
+      ],
+    });
+
+    expect(query).toEqual(expectQuery);
+  });
   test("include with ['relationName']", async () => {
     await Post.sync({ force: true });
     await Comment.sync({ force: true });
