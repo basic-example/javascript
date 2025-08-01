@@ -31,7 +31,14 @@ test('app', async () => {
   const em = orm.em as EntityManager;
   const sql1 = em.createQueryBuilder(User).select('*').getQuery();
   const sql2 = em.createQueryBuilder(User).select(['id', 'name']).getQuery();
+  const sql3 = em
+    .createQueryBuilder(User)
+    .select(['id', 'name'], true)
+    .getQuery();
 
   expect(sql1).toBe('select `u0`.* from `user` as `u0`');
   expect(sql2).toBe('select `u0`.`id`, `u0`.`name` from `user` as `u0`');
+  expect(sql3).toBe(
+    'select distinct `u0`.`id`, `u0`.`name` from `user` as `u0`',
+  );
 });
