@@ -29,7 +29,17 @@ afterAll(async () => {
 
 test('app', async () => {
   const em = orm.em as EntityManager;
-  const qry = em.createQueryBuilder(User).count();
+  const qry1 = em.createQueryBuilder(User).count();
+  const qry2 = em.createQueryBuilder(User).count('id');
+  const qry3 = em.createQueryBuilder(User).count('id', true);
 
-  expect(qry.getQuery()).toBe('select count(*) as `count` from `user` as `u0`');
+  expect(qry1.getQuery()).toBe(
+    'select count(*) as `count` from `user` as `u0`',
+  );
+  expect(qry2.getQuery()).toBe(
+    'select count(`u0`.`id`) as `count` from `user` as `u0`',
+  );
+  expect(qry3.getQuery()).toBe(
+    'select count(distinct `u0`.`id`) as `count` from `user` as `u0`',
+  );
 });
