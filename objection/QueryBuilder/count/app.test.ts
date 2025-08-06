@@ -47,7 +47,10 @@ test('app', async () => {
   await User.query().insert({ name: 'bar', age: 25 });
   await User.query().insert({ name: 'baz', age: 26 });
 
+  const querySpy = jest.spyOn(knex.client, 'query');
   const result = await User.query().count().castTo<[{ 'count(*)': number }]>();
+  const sql = (querySpy.mock.calls[0][1] as Knex.Knex.Sql).toNative();
 
   expect(result[0]['count(*)']).toEqual(3);
+  expect(sql.sql).toBe('select count(*) from `users`');
 });
